@@ -1,0 +1,62 @@
+Vast Shadow
+.navbar {
+    border-radius: 0px;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.b-image {
+	background: url("../images/DuckCamo.jpg");
+}
+.nav-links {
+	background-color: #878e63;
+	border: 1px solid black;
+	margin:auto;
+}
+.navbar-inverse .navbar-toggle:focus {
+	background-color: #878e63;
+}
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #F1F0D1;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #000;
+    background-color:#878e63;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    background-color:#878e63;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #000;
+    background-color: #F1F0D1;
+}
+@media (max-width: 990px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+	  display: block!important;
+	}
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
