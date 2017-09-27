@@ -15,14 +15,15 @@
 
 @section('stylesheets')
 <link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset('css/header.css') }}"></link>
+<link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset('css/footer.css') }}"></link>
+<link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset('css/main.css') }}"></link>
 @endsection
 
 @section('content')
-	<div class="container"> 
 		<div class="row">
 			<div class="col-sm-6">
-				<h1>Hello World!</h1>	
+				<h1>Hello World!</h1>
+				
 			</div>
 		</div>
-	</div>
 @endsection

@@ -8,11 +8,9 @@
 </head>
 <body>
     @include('partials._header')
-    <div id="main">
+    <div id="main" class="container clear-top">
         @yield('content')
     </div>
-    <footer class="row">
-        @include('partials._footer')
-    </footer>
+    @include('partials._footer')
 </body>
 </html>
