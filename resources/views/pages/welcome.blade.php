@@ -3,14 +3,14 @@
 @section('title', '| Home')
 
 @section('navlinks')
-<li class="active"><a href="#">Home</a></li>
-<li><a href="#">Information</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Meet the Animals</a></li>
-<li><a href="#">Litters</a></li>
-<li><a href="#">Place Your Order</a></li>
-<li><a href="#">Training</a></li>
-<li><a href="#">Events</a></li>
+<li class="active"><a href="home">Home</a></li>
+<li><a href="information">Information</a></li>
+<li><a href="gallery">Gallery</a></li>
+<li><a href="meet">Meet the Animals</a></li>
+<li><a href="litters">Litters</a></li>
+<li><a href="place_order">Place Your Order</a></li>
+<li><a href="training">Training</a></li>
+<li><a href="events">Events</a></li>
 @endsection
 
 @section('stylesheets')
