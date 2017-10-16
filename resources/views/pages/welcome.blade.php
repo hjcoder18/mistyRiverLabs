@@ -3,7 +3,7 @@
 @section('title', '| Home')
 
 @section('navlinks')
-<li class="active"><a href="home">Home</a></li>
+<li class="active"><a href="welcome">Home</a></li>
 <li><a href="information">Information</a></li>
 <li><a href="gallery">Gallery</a></li>
 <li><a href="meet">Meet the Animals</a></li>

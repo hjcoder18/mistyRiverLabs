@@ -3,7 +3,7 @@
 @section('title', '| Home')
 
 @section('navlinks')
-<li><a href="home">Home</a></li>
+<li><a href="welcome">Home</a></li>
 <li class="active"><a href="information">Information</a></li>
 <li><a href="gallery">Gallery</a></li>
 <li><a href="meet">Meet the Animals</a></li>
@@ -21,18 +21,23 @@
 
 @section('content')
 <div class="row">
-	<div class="col-sm-4 text-center">
-		<h2>Lulu</h2>
+	<div class="col-sm-6 text-center">
 		
-	</div>
-	<div class="col-sm-4 text-center">
-		<h2>Ember</h2>
-			
-				
-	</div>
-	<div class="col-sm-4 text-center">
-		<h2>Rage</h2>	
-				
+	{!! Form::open(['route' => '#', 'data-parsley-validate' => '', 'files' => true]) !!}
+
+		{{ Form::label('email', 'Email') }}
+	    {{ Form::text('email', null, ['class' => 'form-control', 'required' => '', 'maxlength' => '191']) }}<br/>
+		
+		{{ Form::label('subject', 'Subject') }}
+		{{ Form::text('subject', null, ['class' => 'form-control', 'required' => '', 'maxlength' => '191']) }} <br/>
+
+		{{ Form::label('message', 'Message') }}
+		{{ Form::textarea('message', null, ['class' => 'form-control', 'required' => '', 'maxlength' => '191']) }} <br/>
+
+	
+		{{ Form::submit('Send Message', ['class' => 'btn btn-primary btn-lg btn-block']) }}
+		<br/>
+		{!! Form::close() !!}		
 	</div>
 </div>
 @endsection

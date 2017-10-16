@@ -2,3 +2,13 @@
   overflow:auto;
   padding-bottom:150px; /* this needs to be bigger than footer height*/
 }
+.gallery_image {
+	padding-bottom: 10px;
+}
+.padigree {
+	margin-top:5px;
+	margin-bottom:5px;	
+}
+.video-padding {
+	padding-bottom:10px;
+}

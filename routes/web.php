@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('pages.welcome');
 });
 
-Route::get('home', function () {
+Route::get('welcome', function () {
 	return view('pages.welcome');
 });
 
@@ -46,7 +46,11 @@ Route::get('place_order', function () {
 Route::get('training', function () {
 	return view('pages.training');
 });
-						
-Route::get('gallery', function () {
-	return view('pages.gallery');
-});
+
+Route::resource('gallery', 'GalleryController');
+
+Route::resource('editgallery', 'EditGalleryController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

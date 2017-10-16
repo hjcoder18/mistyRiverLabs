@@ -3,7 +3,7 @@
 @section('title', '| Home')
 
 @section('navlinks')
-<li><a href="home">Home</a></li>
+<li><a href="welcome">Home</a></li>
 <li><a href="information">Information</a></li>
 <li><a href="gallery">Gallery</a></li>
 <li><a href="meet">Meet the Animals</a></li>
@@ -21,18 +21,11 @@
 
 @section('content')
 <div class="row">
-	<div class="col-sm-4 text-center">
-		<h2>Lulu</h2>
-		
+	<div class="col-sm-12 text-center">
+		<h1>Under Construction</h1>
 	</div>
-	<div class="col-sm-4 text-center">
-		<h2>Ember</h2>
-			
-				
-	</div>
-	<div class="col-sm-4 text-center">
-		<h2>Rage</h2>	
-				
-	</div>
+</div>
+<div class="banner">
+	<img alt="Misty River Labs" src="{{ URL::asset('images/misty-river-labs.png') }}" height="400px" width="100%" />
 </div>
 @endsection
