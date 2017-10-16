@@ -14,3 +14,43 @@
 Route::get('/', function () {
     return view('pages.welcome');
 });
+
+Route::get('welcome', function () {
+	return view('pages.welcome');
+});
+
+Route::get('events', function () {
+	return view('pages.events');
+});
+
+Route::get('gallery', function () {
+	return view('pages.gallery');
+});
+	
+Route::get('information', function () {
+	return view('pages.information');
+});
+	
+Route::get('litters', function () {
+	return view('pages.litter');
+});
+			
+Route::get('meet', function () {
+	return view('pages.meet');
+});
+			
+Route::get('place_order', function () {
+	return view('pages.place_order');
+});
+					
+Route::get('training', function () {
+	return view('pages.training');
+});
+
+Route::resource('gallery', 'GalleryController');
+
+Route::resource('editgallery', 'EditGalleryController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

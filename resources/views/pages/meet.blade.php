@@ -3,10 +3,10 @@
 @section('title', '| Home')
 
 @section('navlinks')
-<li class="active"><a href="welcome">Home</a></li>
+<li><a href="welcome">Home</a></li>
 <li><a href="information">Information</a></li>
 <li><a href="gallery">Gallery</a></li>
-<li><a href="meet">Meet the Animals</a></li>
+<li class="active"><a href="meet">Meet the Animals</a></li>
 <li><a href="litters">Litters</a></li>
 <li><a href="place_order">Place Your Order</a></li>
 <li><a href="training">Training</a></li>
@@ -20,32 +20,26 @@
 @endsection
 
 @section('content')
-<div class="banner">
-	<img alt="Misty River Labs" src="{{ URL::asset('images/misty-river-labs.png') }}" height="400px" width="100%" />
+<div class="row">
+	<div class="col-sm-12 text-center">
+		<p>All of our dogs are AKC Registered. Please see attached Pedigree Charts.</p>
+	</div>
 </div>
 <div class="row">
 	<div class="col-sm-4 text-center">
 		<h2>Lulu</h2>
 		<img class="img-responsive img-thumbnail" alt="Misty River Labs" src="{{ URL::asset('images/lulu.jpg') }}" height="400px" width="100%" />		
-		<p>
-			This is our Female Lu. She is a Silver Lab. She is 2 yrs old. LuLu is one of our best hunters, her pictures can be seen in the photo gallery. She loves hunting and being outdoors.
-		</p>
+		<a class="btn btn-primary padigree" href="{{ URL::asset('documents/pedigree/Lulu.pdf') }}">View Pedigree Chart</a>
 	</div>
 	<div class="col-sm-4 text-center">
 		<h2>Ember</h2>
 		<img class="img-responsive img-thumbnail" alt="Misty River Labs" src="{{ URL::asset('images/ember.jpg') }}" height="400px" width="100%" />		
-		<p>
-			This is our Female Ember. She is a Charcoal Lab. Ember is 10 months old. She is very friendly and energetic. Ember loves children and will be a wonderful asset. She will be able to have her first litter by mid summer of 2016.
-		</p>		
-				
+		<a class="btn btn-primary padigree" href="{{ URL::asset('documents/pedigree/Ember.pdf') }}">View Pedigree Chart</a>
 	</div>
 	<div class="col-sm-4 text-center">
 		<h2>Rage</h2>
-		<img class="img-responsive img-thumbnail" alt="Misty River Labs" src="{{ URL::asset('images/rage.jpg') }}" height="400px" width="100%" />		
-		<p>
-			This is our Male Rage. He is a Silver Lab. Rage is 18 months old. He is the stud of our first litter. The pups can be seen in the puppies page. They are all sold at this time. We will be having another litter from LuLu in the next 6 months. Their arrival date will be posted on our calendar.
-		</p>		
-				
+		<img class="img-responsive img-thumbnail" alt="Misty River Labs" src="{{ URL::asset('images/rage.jpg') }}" height="400px" width="100%" />
+		<a class="btn btn-primary padigree" href="{{ URL::asset('documents/pedigree/Rage.pdf') }}">View Pedigree Chart</a>
 	</div>
 </div>
 @endsection
