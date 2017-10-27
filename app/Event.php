@@ -1,0 +1,10 @@
+<?php
+
+namespace MistyRiverLabs;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Event extends Model
+{
+    //
+}

@@ -22,7 +22,7 @@ class GalleryController extends Controller
     	}
     	
     	$data = array(
-    			'galleries' => $galleries,
+    		'galleries' => $galleries,
     	);
     	
     	return view('pages.gallery')->with($data);

@@ -20,12 +20,12 @@
 @endsection
 
 @section('content')
+<h1>Litter</h1>
 <div class="row">
-	<div class="col-sm-12 text-center">
-		<h1>Under Construction</h1>
-	</div>
-</div>
-<div class="banner">
-	<img alt="Misty River Labs" src="{{ URL::asset('images/misty-river-labs.png') }}" height="400px" width="100%" />
+	@foreach($galleries as $gallery)
+    	<div class="col-md-3 gallery_image">
+        	<img src="{{ asset('images/litter/'.$gallery) }}" alt="No image found" height="280px" width="280px"/>
+        </div>
+    @endforeach
 </div>
 @endsection
