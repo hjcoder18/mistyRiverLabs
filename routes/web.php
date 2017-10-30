@@ -23,10 +23,6 @@ Route::get('gallery', function () {
 	return view('pages.gallery');
 });
 	
-Route::get('information', function () {
-	return view('pages.information');
-});
-	
 Route::get('litters', function () {
 	return view('pages.litter');
 });
@@ -42,17 +38,16 @@ Route::get('place_order', function () {
 Route::get('training', function () {
 	return view('pages.training');
 });
+Route::get('information', 'ContactController@getContact');
+Route::post('information', 'ContactController@postContact');
 
 Route::resource('gallery', 'GalleryController');
-
 Route::resource('editgallery', 'EditGalleryController');
-
 Route::resource('litters', 'LitterController');
-
 Route::resource('editlitter', 'EditLitterController');
-
 Route::resource('editcalendar', 'EditCalendarController');
 Route::resource('events', 'CalendarController');
+
 
 Auth::routes();
 
