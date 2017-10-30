@@ -21,12 +21,18 @@
 
 @section('content')
 <div class="row">
-	<div class="col-sm-6 text-center">
-		
-	{!! Form::open(['route' => '#', 'data-parsley-validate' => '', 'files' => true]) !!}
-
+	<div class="col-sm-6 col-sm-offset-3 text-center">
+	<p><b>Thank you for checking us out!</b></p>
+	<p>Want more information or have questions? Use this form to contact us!</p>
+	{!! Form::open(['url' => 'information', 'method' => 'POST', 'data-parsley-validate' => '', 'files' => true]) !!}
+		{{ Form::label('name', 'Name') }}
+	    {{ Form::text('name', null, ['class' => 'form-control', 'required' => '', 'maxlength' => '191']) }}<br/>
+	    
 		{{ Form::label('email', 'Email') }}
 	    {{ Form::text('email', null, ['class' => 'form-control', 'required' => '', 'maxlength' => '191']) }}<br/>
+		
+		{{ Form::label('phone', 'Phone') }}
+	    {{ Form::text('phone', null, ['class' => 'form-control', 'required' => '', 'maxlength' => '191']) }}<br/>
 		
 		{{ Form::label('subject', 'Subject') }}
 		{{ Form::text('subject', null, ['class' => 'form-control', 'required' => '', 'maxlength' => '191']) }} <br/>
