@@ -19,10 +19,6 @@ Route::get('welcome', function () {
 	return view('pages.welcome');
 });
 
-Route::get('events', function () {
-	return view('pages.events');
-});
-
 Route::get('gallery', function () {
 	return view('pages.gallery');
 });
@@ -50,6 +46,13 @@ Route::get('training', function () {
 Route::resource('gallery', 'GalleryController');
 
 Route::resource('editgallery', 'EditGalleryController');
+
+Route::resource('litters', 'LitterController');
+
+Route::resource('editlitter', 'EditLitterController');
+
+Route::resource('editcalendar', 'EditCalendarController');
+Route::resource('events', 'CalendarController');
 
 Auth::routes();
 

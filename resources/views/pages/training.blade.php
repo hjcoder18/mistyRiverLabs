@@ -31,25 +31,25 @@
 </div>
 <div class="row">
 	<div class="col-sm-6 text-center">
-		<h2>Hunting Dog Training (Pre-Training Part 1</h2>
+		<h3>Hunting Dog Training (Pre-Training Part 1)</h3>
 		<div class="embed-responsive embed-responsive-4by3">
 		    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/KKoOgdLSiVs"></iframe>
 		</div>
 	</div>
 	<div class="col-sm-6 text-center">
-		<h2>Gun Dog Training (Pre-Training Week 2)</h2>
+		<h3>Gun Dog Training (Pre-Training Week 2)</h3>
 		<div class="embed-responsive embed-responsive-4by3">
 		    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/M_4rcyqYS5w"></iframe>
 		</div>
 	</div>
 	<div class="col-sm-6 text-center video-padding">
-		<h2>Gundog Training (Introducting Your Gundog to Gun shots</h2>
+		<h3>Gundog Training (Introducting Your Gundog to Gun shots)</h3>
 		<div class="embed-responsive embed-responsive-4by3">
 		    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/cQljL_HO2zM"></iframe>
 		</div>	
 	</div>
 	<div class="col-sm-6 text-center video-padding">
-		<h2>Gun Dog Labrador Puppy Training Week 1 (The Sit, The Retrieve, The Down)</h2>
+		<h3>Gun Dog Labrador Puppy Training Week 1 (The Sit, The Retrieve, The Down)</h3>
 		<div class="embed-responsive embed-responsive-4by3">
 		    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/iCE-vZMl4LU"></iframe>
 		</div>	

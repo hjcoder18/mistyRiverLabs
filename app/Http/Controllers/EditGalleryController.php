@@ -120,11 +120,9 @@ class EditGalleryController extends Controller
      */
     public function destroy($id)
     {
-    	
     	File::delete('images/gallery/' . $id);
     	$images = DB::table('galleries')->where('image', $id)->delete();
         
-    	return redirect('editgallery');
-        
+    	return redirect('editgallery');   
     }
 }

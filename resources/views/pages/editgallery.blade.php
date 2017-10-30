@@ -8,9 +8,19 @@
 <link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset('css/main.css') }}"></link>
 @endsection
 
+@section('navlinks')
+<a class="logout" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+	Logout <span class="glyphicon glyphicon-log-out"></span>
+</a>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+	{{ csrf_field() }}
+</form>
+@endsection
+
 @section('content')
 <div class="container">
- <h1>Welcome {{ Auth::user()->name }}</h1>
+ <h1>Gallery</h1>
+ <hr>
     <div class="row">
     <div class="col-md-6">
     {!! Form::open(['route' => 'editgallery.store', 'data-parsley-validate' => '', 'files' => true]) !!}
@@ -27,9 +37,9 @@
     <div class="row">
         @foreach($galleries as $gallery)
         <div class="col-md-3 gallery_image">
-        	<img src="{{ asset('images/gallery/'.$gallery) }}" alt="No image found" height="240px" width="240px"/>
+        	<img src="{{ asset('images/gallery/'.$gallery) }}" alt="No image found" height="245px" width="100%"/>
         	{!! Form::open(['method' => 'DELETE', 'route' => ['editgallery.destroy', $gallery], 'data-parsley-validate' => '', 'files' => true]) !!}
-        		{{ Form::submit('X', ['class' => 'btn btn-danger']) }}
+        		{{ Form::submit('X', ['class' => 'btn btn-danger btn-block']) }}
         	{!! Form::close() !!}
         </div>
     	@endforeach

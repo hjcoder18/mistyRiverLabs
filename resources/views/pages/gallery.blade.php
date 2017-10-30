@@ -20,6 +20,7 @@
 @endsection
 
 @section('content')
+	<h1>Gallery</h1>
 	<div class="row">
         @foreach($galleries as $gallery)
         <div class="col-md-3 gallery_image">

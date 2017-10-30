@@ -59,3 +59,12 @@
         padding-bottom: 10px;
     }
 }
+.logout {
+	color: #fff;
+	text-decoration:none;
+	font-size: 35px;
+}
+.logout:hover {
+	color: #0000ff;
+	text-decoration:none;
+}
